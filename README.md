@@ -20,9 +20,7 @@ The user will use Python to run the commands that manage the database.
 
 In order to run the module, the user will need to download the Python module psycopg2, available here: https://pypi.python.org/pypi/psycopg2.
 
-#### 2. Create Tournament Database
 
-Start PostgreSQL and create a database called &#39;tournament&#39; (or whatever else you may want to all it).
 
 ### II. **USAGE**
 ### 1. Running the app:
@@ -30,6 +28,23 @@ Start PostgreSQL and create a database called &#39;tournament&#39; (or whatever 
   a. Install the necessary python libraries:
   $ pip install psycopg2                 
   b. Git clone this repository: https://github.com/boo-owner/tournament.git
+  
+### 2. Create database called tournament:
+  a. Start PostgreSQL
+  b. Run tournament.sql. This will create the database tournament with three tables, players, player_results, matches.
+  
+### 3. Test Python file
+  To test the files, on the command line, type this command: python tournament_test.py
+### 4. Populate Database
+  a. use registerPlayer(name_str) function to add player names to the database. This will assign a userid to each player.
+  b. Use reportMatch(winner id, loser id) to add match results to the player_results database
+  c. use recordMatchinfo(matchno,round,submatchno)to describe the match (which round and submatch number)
+
+### 5. Check Standings
+  a. Use playerStandings() to see how players stand after each round.
+  
+### 6. Assign pairings for next round.
+  a. After each round, run swissPairings() to see who will play whom in the next round.
   
 #### **2. Files**
 
