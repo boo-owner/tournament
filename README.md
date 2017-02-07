@@ -30,7 +30,7 @@ Start PostgreSQL and create a database called &#39;tournament&#39; (or whatever 
   a. Install the necessary python libraries:
   $ pip install psycopg2                 
   
-  b. 
+  b. Git clone this repository: 
 #### **2. Files**
 
 **tournament.sql**
