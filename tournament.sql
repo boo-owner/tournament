@@ -6,6 +6,8 @@
 -- player_results: this table records the results of the matches, 
 --     showing id number of the winner or loser, by match number.
 
+CREATE DATABASE tournament;
+
 create table players (
      playerid serial primary key,
      name text
